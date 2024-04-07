@@ -1,0 +1,49 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Java",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "C:\\Program Files\\Java\\jdk-21",
+            "cwd": "${fileDirname}",
+            "startupClass": "vue.MainSceneController", // Mise à jour de la classe de démarrage
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ]
+        },
+        {
+            "name": "Java Console App",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "C:\\Program Files\\Java\\jdk-21",
+            "cwd": "${fileDirname}",
+            "startupClass": "vue.MainSceneController", // Mise à jour de la classe de démarrage
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ],
+            "externalConsole": true
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "JavaFxProject_28269b98",
+            "jdkPath": "C:\\Program Files\\Java\\jdk-21",
+            "cwd": "${workspaceFolder}",
+            "startupClass": "App",
+            "vmArgs": "--module-path \"C:/javafx-sdk-21.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="479.0" prefWidth="584.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vue.MainSceneController">
+   <children>
+      <VBox alignment="CENTER" spacing="10" />
+
+      <Label layoutX="159.0" layoutY="3.0" style="-fx-font-size: 24px;" text="Gestion des comptes" />
+      <TextField fx:id="cnom" layoutX="182.0" layoutY="64.0" />
+      <Label layoutX="116.0" layoutY="181.0" text="montant" />
+      <TextField fx:id="cmontant" layoutX="182.0" layoutY="177.0" />
+      <Label layoutX="103.0" layoutY="211.0" text="typeCompte" />
+      <TextField fx:id="ctypeCompte" layoutX="182.0" layoutY="207.0" />
+ <Button fx:id="buttonAjouter" layoutX="413.0" layoutY="56.0" onAction="#ajouterCompte" text="Ajouter" />
+ <Button layoutX="411.0" layoutY="113.0" onAction="#modifierCompte" text="Modifier" />
+ <Button layoutX="405.0" layoutY="146.0" onAction="#supprimerCompte" text="Supprimer" />
+ <Button layoutX="418.0" layoutY="190.0" onAction="#listerCompte" text="Lister" />
+ <TextField fx:id="cprenom" layoutX="182.0" layoutY="113.0" />
+ <TextField fx:id="cnumerocompte" layoutX="182.0" layoutY="146.0" />
+      <Label layoutX="76.0" layoutY="150.0" text="numeroCompte" />
+
+ <Label fx:id="cprenom" layoutX="103.0" layoutY="117.0" text="prenom" />
+
+ <Label fx:id="cnom" layoutX="107.0" layoutY="60.0" text="nom" />
+      <TableView layoutX="32.0" layoutY="253.0" prefHeight="200.0" prefWidth="541.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="id" />
+          <TableColumn prefWidth="75.0" text="nom" />
+            <TableColumn prefWidth="75.0" text="prenom" />
+            <TableColumn prefWidth="75.0" text="numerocompte" />
+            <TableColumn prefWidth="75.0" text="montant" />
+            <TableColumn prefWidth="75.0" text="typecompte" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
