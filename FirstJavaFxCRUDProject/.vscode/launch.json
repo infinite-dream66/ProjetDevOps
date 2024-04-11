@@ -1,0 +1,36 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Java",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "JAVA_HOME/bin",
+            "cwd": "",
+            "classpath": [
+                ".",
+                ""
+            ],
+            "mainClass": "App",
+            "projectName": "FirstJavaFxCRUDProject_e18a9ce8",
+            "vmArgs": "--module-path \"C:/javafx-sdk-21.0.2/lib\" --add-modules javafx.controls,javafx.fxml",
+            "startupClass": "App"
+        },
+        {
+            "name": "Java Console App",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "JAVA_HOME/bin",
+            "cwd": "",
+            "classpath": [
+                ".",
+                ""
+            ],
+            "externalConsole": true,
+            "mainClass": "App",
+            "startupClass": "App"
+        }
+    ]
+}

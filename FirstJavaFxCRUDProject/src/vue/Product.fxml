@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="644.0" prefWidth="758.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ProductController">
+   <children>
+      <Label layoutX="351.0" layoutY="33.0" text="Gestion Des Produits">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="ComboBoxCategories" layoutX="37.0" layoutY="175.0" onAction="#handleCategorySelection" prefWidth="150.0" />
+      <Button fx:id="btnaddproduct" layoutX="425.0" layoutY="65.0" mnemonicParsing="false" onAction="#handleaddproductbutton" text="Ajouter" />
+      <Button fx:id="btnupdateproduct" layoutX="425.0" layoutY="112.0" mnemonicParsing="false" onAction="#handleupdateproductbutton" text="Modifier" />
+      <Button fx:id="btndeleteproduct" layoutX="434.0" layoutY="163.0" mnemonicParsing="false" onAction="#handledeleteproductbutton" text="Supprimer" />
+      <TableView layoutX="129.0" layoutY="329.0" prefHeight="200.0" prefWidth="511.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="libelleColumn" prefWidth="150.0" text="Libelle" />
+          <TableColumn fx:id="quantiteColumn" prefWidth="75.0" text="Quantite" />
+          <TableColumn fx:id="prixUnitaireColumn" prefWidth="100.0" text="Prix unitaire" />
+          <TableColumn fx:id="idCategorieColumn" prefWidth="100.0" text="Catégorie" /> <!-- Correction du nom -->
+        </columns>
+      </TableView>
+      <TextField fx:id="textFieldlibelle" layoutX="113.0" layoutY="56.0" />
+      <TextField fx:id="textFieldquantite" layoutX="123.0" layoutY="88.0" />
+      <TextField fx:id="textFieldprixunitaire" layoutX="129.0" layoutY="120.0" />
+   </children>
+</AnchorPane>
